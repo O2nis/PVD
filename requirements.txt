@@ -1,7 +1,11 @@
-streamlit
 pandas
 numpy
 statsmodels
-scipy
-matplotlib
 arch
+pvlib
+xgboost
+scipy
+streamlit
+matplotlib
+joblib
+rdtools
