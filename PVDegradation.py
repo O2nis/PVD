@@ -86,7 +86,7 @@ with col2:
         clearsky_model = st.radio("Clearsky Model", ["pvlib", "csi"])
         csi_threshold = st.slider("CSI Threshold", 0.05, 0.5, 0.15)
     
-    if use_clipping and power_col:
+    ifmid use_clipping and power_col:
         clip_model = st.radio("Clipping Model", ["logic", "quantile", "xgboost"])
 
 # Apply filters
@@ -203,7 +203,7 @@ with col1:
 
 with col2:
     st.metric("Data Retention", 
-              f"{(len(filtered_energy)/len(df)*100:.1f}%")
+              f"{len(filtered_energy)/len(df)*100:.1f}%")
     st.metric("Time Span", 
               f"{(filtered_energy.index[-1] - filtered_energy.index[0]).days / 365:.1f} years")
 
