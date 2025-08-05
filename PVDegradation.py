@@ -86,7 +86,7 @@ with col2:
         clearsky_model = st.radio("Clearsky Model", ["pvlib", "csi"])
         csi_threshold = st.slider("CSI Threshold", 0.05, 0.5, 0.15)
     
-    ifmid use_clipping and power_col:
+    if use_clipping and power_col:
         clip_model = st.radio("Clipping Model", ["logic", "quantile", "xgboost"])
 
 # Apply filters
